@@ -1,0 +1,75 @@
+body {
+    background-color: black;
+}
+
+.grid-row {
+    clear: both;
+    height: 40px;
+}
+
+.settings-button {
+    float: left;
+    padding-left: 12px;
+}
+
+.entry-bar {
+    border-radius: 50px;
+    background-color: darkgray;
+    color: white;
+    width: 80%;
+    float: left;
+    padding: 1rem;
+}
+
+.selected-explore-tab {
+    color: rgb(29, 161, 242);
+    border-bottom-color: rgb(29, 161, 242);
+    border-bottom-width: thick;
+    width: calc(80% / 8);
+    float: left;
+    border-bottom-style: solid;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.explore-tab {
+    color: rgb(110, 118, 125);
+    border-bottom-color: rgb(110, 118, 125);
+    border-bottom-width: thick;
+    width: calc(80% / 8);
+    float: left;
+    border-bottom-style: solid;
+    padding: 16px;
+    font-size: 15px;
+}
+
+.main-content {
+    margin-left: 20px;
+}
+
+.post {
+    height: 40px;
+    color: rgb( 110, 118, 125);
+    font-size: 13px;
+    padding: 5px;
+    margin: 10px;
+    clear: both;
+}
+
+.white-font {
+    color: white;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.post-info {
+    float: left;
+}
+
+.post-image {
+    float: right;
+    border-radius: 10px;
+    margin-right: 16px;
+}

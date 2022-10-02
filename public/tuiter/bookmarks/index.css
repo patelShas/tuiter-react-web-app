@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-white {
+    color: white;
+}
+
+.font-grey {
+    color: grey;
+}
+
+.font-red {
+    color: red;
+}
+
+.title-section {
+    margin-left: 16px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: grey;
+    padding-bottom: 12px;
+}
+
+.post-section {
+    margin-left: 16px;
+}
+
+.profile-pic {
+    border-radius: 24px;
+    float: left;
+}
+
+.post-content {
+    margin-left: 12px;
+    max-width: 506px;
+    float: left;
+    padding-right: 16px;
+}
+
+.thumbnail {
+    border-radius: 24px;
+    border-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.thumbnail-img {
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+    border-bottom-style: solid;
+    border-color: gray;
+    border-width: 1px;
+}
+
+.thumbnail-desc {
+    padding: 12px;
+    margin: 0pc;
+}
+
+.post-metrics {
+    padding-top: 12px;
+    clear: both;
+}
+
+.post-metric-item {
+    float: left;
+    width: 25%;
+}
