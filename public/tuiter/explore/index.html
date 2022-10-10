@@ -3,94 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <title>Explore</title>
-    <link href="index.css"
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css"
           rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
 
 </head>
 <body>
-<div class="grid-row">
-    <input class="entry-bar" type="text" placeholder="Search Tuiter">
-    <a class="settings-button" href="explor-settings.html"><img
-            src="https://icons.iconarchive.com/icons/hopstarter/soft-scraps/256/Gear-icon.png" height="40px"
-            width="40px"/></a>
-</div>
-<br/>
-<div class="grid-row">
 
-    <a href="index.html">
-        <div class="selected-explore-tab">For You</div>
-    </a>
-    <a href="index.html">
-        <div class="explore-tab">Trending</div>
-    </a>
-    <a href="index.html">
-        <div class="explore-tab">COVID-19</div>
-    </a>
-    <a href="index.html">
-        <div class="explore-tab">News</div>
-    </a>
-    <a href="index.html">
-        <div class="explore-tab">Sports</div>
-    </a>
-    <a href="index.html">
-        <div class="explore-tab">Entertainment</div>
-    </a>
-</div>
-<br/>
-<div class="main-content">
-    <div class="post">
-        Trending in Science
-        <div class="white-font font-16">Starships</div>
-        55.5k Tuits
+<div class="row">
+    <div class="p-3 col-2" id="left-links">
+        <a class="list-group-item"><i class="fab fa-twitter fa-1x"></i><br/></a>
+        <a href="../home.html" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>
+            <span class="d-none d-xl-inline"> home</span></a>
+        <a href="#" class="list-group-item list-group-item-action active"><i class="fas fa-hashtag"></i>
+            <span class="d-none d-xl-inline"> explore</span></a>
+        <a href="../notifications.html" class="list-group-item list-group-item-action"><i class="fas fa-bell"></i>
+            <span class="d-none d-xl-inline"> notifications</span></a>
+        <a href="../messages.html" class="list-group-item list-group-item-action"><i class="fas fa-envelope"></i>
+            <span class="d-none d-xl-inline"> messages</span></a>
+        <a href="../bookmarks/index.html" class="list-group-item list-group-item-action"><i class="fas fa-bookmark"></i>
+            <span class="d-none d-xl-inline"> bookmarks</span></a>
+        <a href="../lists.html" class="list-group-item list-group-item-action"><i class="fas fa-list"></i>
+            <span class="d-none d-xl-inline"> lists</span></a>
+        <a href="../profile.html.html" class="list-group-item list-group-item-action"><i class="fas fa-user"></i>
+            <span class="d-none d-xl-inline"> profile</span></a>
+        <a class="list-group-item"><i class="fas fa-chevron-circle-down"></i>
+            <span class="d-none d-xl-inline"> more</span></a>
+
+        <button type="button" class="btn btn-primary rounded-pill m-1" style="width: 95%">TUIT</button>
     </div>
-    <div class="post">
-        Sports, Trending
-        <div class="white-font font-16">Joe Rogan</div>
-        5 Tuits
-    </div>
-    <div class="post">
-        <div class="post-info">
-            <span class="white-font">The Gondolier Times</span> Yesterday
-            <div class="white-font font-16">Pit of Hellfire in Nevada expands to 100 sq. miles</div>
-            3k Tuits
+
+    <div class="col-10 col-lg-6 p-3">
+
+        <div class="row align-items-center">
+            <div class="rounded-pill border border-dark p-1 col-11">
+                <i class="fas fa-search ps-3"></i>
+                <input type="text" class="border-0 w-75" placeholder="Search"></input>
+            </div>
+            <div class="col-1">
+                <i class="fas fa-cog fa-2x" style="color: deepskyblue"></i>
+            </div>
+
         </div>
-        <img src="https://preview.redd.it/a52p00dk23f71.jpg?auto=webp&s=0de812db92125cffac59e2cbb289ead69c0081b4"
-             class="post-image"
-             height="100px"
-             width="100px" alt="The seventh seal losens"/>
-    </div>
-    <div class="post">
-        <div class="post-info">
-            <span class="white-font">The Gondolier State Authority</span> Today
-            <div class="white-font font-16">Nevada residents have nothing to fear from "pleasant skies"</div>
-            6k Tuits
+
+
+        <ul class="nav nav-tabs p-3">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">For you</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Trending</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Sports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Entertainment</a>
+            </li>
+        </ul>
+
+        <div class="card bg-dark text-white">
+            <img src="https://www.nasa.gov/sites/default/files/thumbnails/image/for_press_release.jpg" class="card-img"
+                 alt="elon-rocket">
+            <div class="card-img-overlay">
+                <div class="position-absolute bottom-0 start-0 p-3">
+                    <h1 class="card-title">SpaceX's Starship</h1>
+                </div>
+            </div>
         </div>
-        <img src="https://previews.123rf.com/images/dmitrysedakov/dmitrysedakov1911/dmitrysedakov191100036/133840572-a-group-of-young-yakut-tourists-descends-the-trail-from-the-mountain-overgrown-with-yakut-succulents.jpg"
-             class="post-image"
-             height="100px"
-             width="100px" alt="The seal stays shut"/>
-    </div>
-    <div class="post">
-        <div class="post-info">
-            Nevada Hellfires, Live
-            <div class="white-font font-16">Interview with wizard over Nevada Hellfires</div>
-            6k Tuits
+
+        <div class="list-group-item">
+            <div class="row d-flex align-items-center">
+                <div class="col-8">
+                    <p class="text-black">
+                    <span class="text-muted">Web Development<br/>
+                    <b class="text-black">ReactJS</b> • 2h</span><br/>
+                        React.js is a component based front end library that makes it very easy to build single page
+                        applications or SPAs<br/>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png"
+                         class="img-fluid float-end rounded" alt="React-icon" style="max-height: 100px">
+                </div>
+            </div>
         </div>
-        <img src="https://thumbs.dreamstime.com/b/business-man-hold-magic-light-hand-success-concept-44102042.jpg"
-             class="post-image"
-             height="100px"
-             width="100px" alt="The seal stays shut"/>
-    </div>
-    <div class="post">
-        <div class="post-info">
-            Rare fish, live
-            <div class="white-font font-16">Updates on Rare Fish Investments</div>
-            163k Tuits
+        <div class="list-group-item">
+            <div class="row d-flex align-items-center">
+                <div class="col-8">
+                    <p class="text-black">
+                        <b class="text-black">Javascript</b><span class="text-muted"> • 2h</span><br/>
+                        Javascript is a programming language that can run on browsers as well as desktops<br/>
+                        <span class="text-muted">123k Tuits</span>
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+                         class="img-fluid float-end rounded" alt="JS-icon" style="max-height: 100px">
+                </div>
+            </div>
         </div>
-        <img src="data:image/jpeg;base64,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"
-             class="post-image"
-             height="100px"
-             width="100px" alt="The seal stays shut"/>
+        <div class="list-group-item">
+            <div class="row d-flex align-items-center">
+                <div class="col-8">
+                    <p class="text-muted">
+                        Web Development<br/>
+                        <b class="text-black">JQuery</b><br/>
+                        123k Tuits
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/jquery-8-1175153.png"
+                         class="img-fluid float-end rounded" alt="JQuery-icon" style="max-height: 100px">
+                </div>
+            </div>
+        </div>
+        <div class="list-group-item">
+            <div class="row d-flex align-items-center">
+                <div class="col-8">
+                    <p class="text-muted">
+                        Web Development<br/>
+                        <b class="text-black">NodeJS</b> • 2h<br/>
+                        123k Tuits
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png"
+                         class="img-fluid float-end rounded" alt="Node-icon" style="max-height: 100px">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="d-none d-lg-block col-lg-4 p-3">
+        <div class="list-group-item"><b>Who to follow</b></div>
+        <div class="list-group-item">
+            <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" class="rounded-circle" alt="Java-icon"
+                 width="48px" height="48px">
+            <div class="d-inline-block align-middle"><b>Java</b><br/>@java</div>
+            <button class="btn btn-primary float-end" style="border-radius: 24px">
+                Follow
+            </button>
+        </div>
+        <div class="list-group-item">
+            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/j3dbh6kok0dket3uz2vy"
+                 class="rounded-circle" alt="RSpace-icon" width="48px" height="48px">
+            <div class="d-inline-block align-middle"><b>Relativity Space</b><br/>@relativityspace</div>
+            <button class="btn btn-primary float-end" style="border-radius: 24px">
+                Follow
+            </button>
+        </div>
+        <div class="list-group-item">
+            <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco,dpr_1/vx4hxg2tnybefwmt4xxb"
+                 class="rounded-circle" alt="VGalactic-icon" width="48px" height="48px">
+            <div class="d-inline-block align-middle"><b>Virgin Glactic</b><br/>@virgingalactic</div>
+            <button class="btn btn-primary float-end" style="border-radius: 24px">
+                Follow
+            </button>
+        </div>
+        <div class="list-group-item">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png"
+                 class="rounded-circle" alt="Nasa-icon" width="48px" height="48px">
+            <div class="d-inline-block align-middle"><b>Nasa</b><br/>@nasa</div>
+            <button class="btn btn-primary float-end" style="border-radius: 24px">
+                Follow
+            </button>
+        </div>
+        <div class="list-group-item">
+            <img src="https://www.carlogos.org/car-logos/tesla-logo-2200x2800.png" class="rounded-circle"
+                 alt="Tesla-icon" width="48px" height="48px">
+            <div class="d-inline-block align-middle"><b>Tesla</b><br/>@tesla</div>
+            <button class="btn btn-primary float-end" style="border-radius: 24px">
+                Follow
+            </button>
+        </div>
     </div>
 </div>
 </body>
