@@ -6,37 +6,37 @@ const NavigationSidebar = (
 ) => {
     return (
         <div className="list-group">
-            <a className="list-group-item">Tuiter</a>
+            <a className="list-group-item" href={"/#"}>Tuiter</a>
             <a className={`list-group-item
-                    ${active === 'home'?'active':''}`}>
+                    ${active === 'home'?'active':''}`} href={"/#"}>
                 Home
             </a>
             <a className={`list-group-item
-                    ${active === 'explore'?'active':''}`}>
+                    ${active === 'explore'?'active':''}`} href={"/#"}>
                 Explore
             </a>
             <a className={`list-group-item
-                    ${active === 'notifications'?'active':''}`}>
+                    ${active === 'notifications'?'active':''}`} href={"/#"}>
                 Notifications
             </a>
             <a className={`list-group-item
-                    ${active === 'messages'?'active':''}`}>
+                    ${active === 'messages'?'active':''}`} href={"/#"}>
                 Messages
             </a>
             <a className={`list-group-item
-                    ${active === 'bookmarks'?'active':''}`}>
+                    ${active === 'bookmarks'?'active':''}`} href={"/#"}>
                 Bookmarks
             </a>
             <a className={`list-group-item
-                    ${active === 'lists'?'active':''}`}>
+                    ${active === 'lists'?'active':''}`} href={"/#"}>
                 Lists
             </a>
             <a className={`list-group-item
-                    ${active === 'profile'?'active':''}`}>
+                    ${active === 'profile'?'active':''}`} href={"/#"}>
                 Profile
             </a>
             <a className={`list-group-item
-                    ${active === 'more'?'active':''}`}>
+                    ${active === 'more'?'active':''}`} href={"/#"}>
                 More
             </a>
         </div>
