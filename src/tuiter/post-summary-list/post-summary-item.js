@@ -22,7 +22,7 @@ const PostSummaryItem = (
                     </p>
                 </div>
                 <div className="col-4">
-                    <img src={`./images/${post.image}`}
+                    <img src={require(`../images/${post.image}`)}
                          className="img-fluid float-end rounded" alt={`${post.userName}-icon`} width={70}/>
                 </div>
             </div>
