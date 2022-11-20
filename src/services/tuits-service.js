@@ -17,6 +17,7 @@ export const deleteTuit = async (tid) => {
     return response.data
 }
 export const updateTuit = async (tuit) => {
+    // eslint-disable-next-line no-unused-vars
     const response = await axios
         .put(`${TUITS_API}/${tuit._id}`, tuit);
     return tuit;
