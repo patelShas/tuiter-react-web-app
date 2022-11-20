@@ -1,13 +1,13 @@
 import React from "react";
 import TuitStats from "./tuit-stats";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
     {
         tuit = {
             "topic": "Space",
-            "userName": "SpaceX",
+            "username": "SpaceX",
             "time": "2h",
             "title": "100s of SpaceX Starships land on Mars after a 6 month journey. 1000s of Martian colonists being building Mars Base 1",
             "image": "spacex.png",
@@ -23,16 +23,17 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
 
+    const img = require(`../images/${tuit.image}`)
     return (
         <li className="list-group-item d-flex">
-            <img src={require(`../images/${tuit.image}`)} className="rounded-circle" alt={`${tuit.userName}-icon`}
+            <img src={img} className="rounded-circle" alt={`${tuit.username}-icon`}
                  width="48px" height="48px"/>
             <div className={"d-inline-block align-middle ps-3"}>
                 <p className="text-muted">
-                    <b className="text-black">{tuit.userName}</b> {tuit.handle} · {tuit.time}
+                    <b className="text-black">{tuit.username}</b> {tuit.handle} · {tuit.time}
                     <i className="bi bi-x-lg float-end"
                        onClick={() => deleteTuitHandler(tuit._id)}></i>
                     <br/>

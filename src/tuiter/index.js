@@ -9,7 +9,7 @@ import {Provider} from "react-redux";
 import HomeCompenent from "./home/index";
 
 const store = configureStore(
-    {reducer: {who: whoReducer, tuits: tuitsReducer}});
+    {reducer: {who: whoReducer, tuitsData: tuitsReducer}});
 
 function Tuiter() {
     return (
