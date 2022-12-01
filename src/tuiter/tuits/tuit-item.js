@@ -25,8 +25,9 @@ const TuitItem = (
     const deleteTuitHandler = (id) => {
         dispatch(deleteTuitThunk(id));
     }
-
-    const img = require(`../images/${tuit.image}`)
+    const img = tuit.image ?
+        require(`../images/${tuit.image}`) :
+        `../images/${tuit.image}`
     return (
         <li className="list-group-item d-flex">
             <img src={img} className="rounded-circle" alt={`${tuit.username}-icon`}
